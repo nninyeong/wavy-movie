@@ -9,7 +9,7 @@ export function setMovieInfo() {
     movies.appendChild(testCard);
     let title = movie.title;
     let posterImage = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
-    let ratingScore = movie.vote_average;
+    let ratingScore = movie.vote_average.toFixed(1);
     let overview = movie.overview;
 
     testCard.style.backgroundImage = `url(${posterImage})`;
@@ -18,7 +18,5 @@ export function setMovieInfo() {
       <p class="ratingScroe">${ratingScore}</p>
     `;
     testCard.innerHTML = contentHtml;
-
-    console.log(title, ratingScore, overview, posterImage);
   });
 }
