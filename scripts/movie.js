@@ -22,7 +22,12 @@ export function setMovieInfo() {
     `;
 
     movieCard.innerHTML = contentHtml;
+    movieCard.addEventListener('click', (event) => {
+      alertID(event);
+    });
   });
 }
 
-function alertID() {}
+function alertID(event) {
+  alert(`영화 ID: ${event.target.id}`);
+}
