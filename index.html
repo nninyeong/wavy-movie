@@ -4,20 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wavy Movie</title>
+    <link rel="stylesheet" href="styles/common.css" />
     <link rel="stylesheet" href="styles/card.css" />
     <script type="module" src="scripts/app.js"></script>
   </head>
   <body>
     <div class="mainContainer">
-      <h1 class="title">Wavy Movie</h1>
+      <h1 class="logo">Wavy Movie</h1>
       <form class="searchForm">
         <input
           type="text"
           class="searchText"
           placeholder="궁금한 영화의 제목을 입력하세요!" />
-        <input type="button" class="searchButton">검색</input>
+        <input type="button" class="searchButton" value="검색" />
       </form>
-      <section class="chart">
+      <section class="category chart">
         <h2>Top 10</h2>
         <div class="movies"></div>
       </section>
