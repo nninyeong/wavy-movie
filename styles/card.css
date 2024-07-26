@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'SUITE-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2')
+    format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
 .category {
   width: 90%;
   margin: 10px auto 0 auto;
@@ -17,15 +25,48 @@
   width: 280px;
   height: 420px;
   background-color: black;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: white;
   font-size: 2rem;
+
+  position: relative;
 }
 
-.movieCard:hover {
-  filter: brightness(0.5);
+.posterImage {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+.infoLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.5s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.movieCard:hover .infoLayer {
+  opacity: 1;
+}
+
+.infoLayer p {
+  font-family: 'SUITE-Regular';
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.infoLayer .title {
+  font-family: 'SUITE-Regular';
+  font-weight: 900;
+  font-size: 3rem;
+  margin-bottom: 5px;
 }
 
 .displayNone {

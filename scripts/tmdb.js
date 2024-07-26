@@ -43,11 +43,13 @@ function setMovieInfo() {
     const ratingScore = movie.vote_average.toFixed(1);
     const overview = movie.overview;
 
-    movieCard.style.backgroundImage = `url(${posterImage})`;
     const contentHtml = `
-      <p class="title">${title}</p>
-      <p class="ratingScroe">${ratingScore}</p>
-      <p class="overview">${overview}</p>
+      <img src=${posterImage} class="posterImage">
+      <div class="infoLayer">
+        <p class="title">${title}</p>
+        <p class="ratingScroe">⭐️ ${ratingScore}</p>
+        <p class="overview">${overview}</p>
+      </div>
     `;
 
     movieCard.innerHTML = contentHtml;
