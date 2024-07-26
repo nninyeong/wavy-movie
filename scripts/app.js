@@ -1,6 +1,6 @@
 import {fetchFromTMDB} from './tmdb.js';
-import {setSearchButtonEvent} from './search.js';
+import {setGlobalEvents} from './globalEvents.js';
 
 fetchFromTMDB();
 
-setSearchButtonEvent();
+setGlobalEvents();

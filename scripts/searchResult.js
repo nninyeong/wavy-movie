@@ -1,6 +1,6 @@
-import {setSearchButtonEvent} from './search.js';
+import {setGlobalEvents} from './globalEvents.js';
 import {TMDB_TOPRATING_AUTH} from './apiKeys.js';
-setSearchButtonEvent();
+setGlobalEvents();
 
 const params = new URLSearchParams(window.location.search);
 const keyword = params.get('keyword');

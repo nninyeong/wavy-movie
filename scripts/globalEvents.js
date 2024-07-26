@@ -2,7 +2,7 @@ const searchButton = document.querySelector('.searchButton');
 const searchText = document.querySelector('.searchText');
 const title = document.querySelector('.title');
 
-export function setSearchButtonEvent() {
+export function setGlobalEvents() {
   searchButton.addEventListener('click', searchMovies);
   title.addEventListener('click', goIndex);
 }
