@@ -13,7 +13,7 @@ const options = {
 
 export function fetchFromTMDB() {
   return fetch(
-    'https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=ko-KR&page=1&sort_by=popularity.desc',
+    'https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=ko-KR&page=1&sort_by=popularity.desc', // TODO: 전체에서 가져오기, 내가 sort할 필요가 없음
     options,
   )
     .then((response) => response.json())
@@ -47,6 +47,7 @@ function setMovieInfo() {
     const contentHtml = `
       <p class="title">${title}</p>
       <p class="ratingScroe">${ratingScore}</p>
+      <p class="overview">${overview}</p>
     `;
 
     movieCard.innerHTML = contentHtml;

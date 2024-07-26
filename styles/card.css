@@ -1,3 +1,18 @@
+.category {
+  width: 90%;
+  margin: 10px auto 0 auto;
+  padding: 10px;
+}
+
+.movies {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 10px;
+}
+
 .movieCard {
   width: 280px;
   height: 420px;
@@ -6,14 +21,11 @@
   background-repeat: no-repeat;
   background-position: center;
   color: white;
+  font-size: 2rem;
 }
 
-.movies {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-content: flex-start;
+.movieCard:hover {
+  filter: brightness(0.5);
 }
 
 .displayNone {

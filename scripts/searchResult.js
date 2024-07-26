@@ -44,6 +44,7 @@ function showResult(searchResult) {
     const contentHtml = `
           <p class="title">${title}</p>
           <p class="ratingScore">${ratingScore}</p>
+          <p class="overview">${overview}</p>
       `;
 
     movieCard.innerHTML = contentHtml;
