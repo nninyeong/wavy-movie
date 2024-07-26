@@ -22,7 +22,13 @@ fetch(
   .catch((err) => console.error(err));
 
 const foundMovies = document.querySelector('.foundMovies');
+const notFound = document.querySelector('.notFound');
 function showResult(searchResult) {
+  if (searchResult.length === 0) {
+    notFound.classList.remove('displayNone');
+    return;
+  }
+
   searchResult.forEach((movie) => {
     const movieCard = document.createElement('div');
     movieCard.className = 'movieCard';

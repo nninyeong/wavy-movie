@@ -14,3 +14,7 @@
   flex-wrap: wrap;
   align-content: flex-start;
 }
+
+.displayNone {
+  display: none;
+}
