@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'LOTTERIACHAB';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIACHAB.woff2')
+    format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +14,7 @@
 
 html {
   font-size: 10px;
+  font-family: 'SUITE-Regular';
 }
 
 .mainContainer {
@@ -16,8 +25,10 @@ html {
 }
 
 .logo {
-  font-size: 6rem;
+  font-size: 6.5rem;
   margin-top: 50px;
+  font-family: 'LOTTERIACHAB';
+  font-weight: 400;
 }
 
 .searchText {
@@ -27,6 +38,7 @@ html {
   border-radius: 15px;
   padding-left: 25px;
   font-size: 2rem;
+  font-family: 'SUITE-Regular';
 }
 
 .searchButton {
@@ -37,6 +49,7 @@ html {
   background-color: transparent;
   margin-left: 5px;
   font-size: 2rem;
+  font-family: 'SUITE-Regular';
 }
 
 .chart > h2 {
