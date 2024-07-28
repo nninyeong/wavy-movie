@@ -60,5 +60,5 @@ function setMovieInfo() {
 }
 
 function alertID(event) {
-  alert(`영화 ID: ${event.target.id}`);
+  alert(`영화 ID: ${event.currentTarget.id}`);
 }
