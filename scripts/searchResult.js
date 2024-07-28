@@ -40,9 +40,8 @@ function showResult(searchResult) {
     const ratingScore = movie.vote_average.toFixed(1);
     const overview = movie.overview;
 
-    movieCard.style.backgroundImage = `url(${posterImage})`;
     const contentHtml = `
-        <img src=${posterImage} class="posterImage">
+        <img src=${posterImage} onerror="this.onerror=null; this.src='../assets/defaultImage.png';" class="posterImage">
         <div class="infoLayer">
         <p class="title">${title}</p>
         <p class="ratingScroe">⭐️ ${ratingScore}</p>
