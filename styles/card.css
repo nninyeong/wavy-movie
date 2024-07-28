@@ -67,6 +67,16 @@
   font-weight: 900;
   font-size: 3rem;
   margin-bottom: 5px;
+  flex-shrink: 1;
+}
+
+.ratingScroe {
+  flex-shrink: 1;
+}
+
+.overview {
+  flex-shrink: 3;
+  overflow: hidden;
 }
 
 .displayNone {
