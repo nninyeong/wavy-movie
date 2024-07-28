@@ -52,6 +52,38 @@ html {
   font-family: 'SUITE-Regular';
 }
 
+.checkbox {
+  height: 30px;
+  font-size: 18px;
+}
+
+#defaultCheckbox {
+  display: none;
+}
+
+.checkboxIcon {
+  margin-right: 10px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  border: 1px solid black;
+  position: relative;
+}
+
+#defaultCheckbox:checked + label .checkboxIcon::after {
+  content: "✔";
+  position: absolute;
+  top: -75%;
+  font-size: 25px;
+}
+
+.checkbox label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .chart > h2 {
   font-size: 3.5rem;
 }
