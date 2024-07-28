@@ -53,8 +53,6 @@ html {
 }
 
 .checkbox {
-  align-content: center;
-  height: 30px;
   font-size: 18px;
 }
 
@@ -75,7 +73,7 @@ html {
 #defaultCheckbox:checked + label .checkboxIcon::after {
   content: '✔';
   position: absolute;
-  top: -75%;
+  top: -10px;
   font-size: 25px;
 }
 

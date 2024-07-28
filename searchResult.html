@@ -15,11 +15,12 @@
         <input
           type="text"
           class="searchText"
-          placeholder="궁금한 영화의 제목을 입력하세요!" />
+          placeholder="궁금한 영화의 제목을 입력하세요!"
+          onsubmit="return false" />
         <input type="button" class="searchButton" value="검색" />
       </form>
       <div class="checkbox">
-        <input type="checkbox" name="searchFilter" id="defaultCheckbox">
+        <input type="checkbox" name="searchFilter" id="defaultCheckbox" />
         <label for="defaultCheckbox">
           <span class="checkboxIcon"></span>
           <span class="checkboxContent">24년 개봉작만 보기</span>
