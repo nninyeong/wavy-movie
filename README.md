@@ -42,7 +42,7 @@ HTML, CSS, JavaScript를 사용했습니다.
 
 
 # 해결하지 못한 부분
-- chrome과 safari에서 폰트 사이즈, 물결 위치가 다른 것을 발견
+- chrome과 safari에서 폰트 사이즈, 물결 위치, z-index가 다른 것을 발견
 
 
 
