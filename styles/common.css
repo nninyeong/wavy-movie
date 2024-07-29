@@ -108,22 +108,22 @@ body {
 }
 
 .wave1 {
-  width: 400vw;
-  height: 400vw;
+  width: 500vw;
+  height: 500vw;
   position: absolute;
-  top: 60%;
-  left: -150%;
+  top: 65%;
+  left: -200%;
   background-color: rgb(160, 222, 255);
   border-radius: 47%;
   animation: move 6s infinite linear;
 }
 
 .wave2 {
-  width: 400vw;
-  height: 400vw;
+  width: 500vw;
+  height: 500vw;
   position: absolute;
   top: 70%;
-  left: -150%;
+  left: -200%;
   background-color: rgb(90, 178, 255);
   border-radius: 49%;
   animation: move 6.5s infinite linear;
