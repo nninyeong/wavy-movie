@@ -32,7 +32,7 @@ const movies = document.querySelector('.movies');
 function setMovieInfo() {
   // Top10 영화 카드 추가
   topRatedMovies.forEach((movie) => {
-    const movieCard = document.createElement('div');
+    const movieCard = document.createElement('li');
     movieCard.className = 'movieCard';
     const id = movie.id;
     movieCard.id = id;

@@ -35,7 +35,7 @@ function showResult(searchResult) {
   }
 
   searchResult.forEach((movie) => {
-    const movieCard = document.createElement('div');
+    const movieCard = document.createElement('li');
     movieCard.className = 'movieCard';
     movieCard.id = `id_${movie.id}`;
     foundMoviesSection.appendChild(movieCard);
