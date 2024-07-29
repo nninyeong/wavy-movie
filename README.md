@@ -4,7 +4,7 @@
 HTML, CSS, JavaScript를 사용했습니다.
 
 ![wm_out](https://github.com/user-attachments/assets/82395c07-01ac-49c7-b7fd-922206558580)
-![영화 정보](https://github.com/user-attachments/assets/03d12a94-a50b-4768-b7b9-58c9bc075f68)
+![카드 내용 제한](https://github.com/user-attachments/assets/929a9601-e0ec-4192-b3dc-3d220bb654d1)
 ![24년 개봉작 필터링, 기본이미지](https://github.com/user-attachments/assets/183e902f-71ea-4099-9628-9afdf4917eb4)
 
 
