@@ -17,6 +17,10 @@ html {
   font-family: 'SUITE-Regular';
 }
 
+body {
+  background-color: rgb(90, 178, 255);
+}
+
 .mainContainer {
   display: flex;
   flex-direction: column;
@@ -29,6 +33,11 @@ html {
   margin-top: 50px;
   font-family: 'LOTTERIACHAB';
   font-weight: 400;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
 }
 
 .searchText {
@@ -85,4 +94,42 @@ html {
 
 .chart > h2 {
   font-size: 3.5rem;
+}
+
+/* wave */
+.wave {
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  position: relative;
+  width: 100vw;
+  height: 400px;
+  background-color: white;
+}
+
+.wave1 {
+  width: 400vw;
+  height: 400vw;
+  position: absolute;
+  top: 60%;
+  left: -150%;
+  background-color: rgb(160, 222, 255);
+  border-radius: 47%;
+  animation: move 6s infinite linear;
+}
+
+.wave2 {
+  width: 400vw;
+  height: 400vw;
+  position: absolute;
+  top: 70%;
+  left: -150%;
+  background-color: rgb(90, 178, 255);
+  border-radius: 49%;
+  animation: move 6.5s infinite linear;
+}
+
+@keyframes move {
+  100% {
+    transform: rotate(360deg);
+  }
 }
