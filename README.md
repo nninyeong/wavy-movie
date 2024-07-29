@@ -1,17 +1,21 @@
 # wavy-movie
 
 개인 프로젝트로 제작한 영화 검색 사이트입니다.
-HTML, CSS, JavaScript를 사용했습니다.
+HTML, CSS, JavaScript, TMDB를 사용했습니다.
 
-![wm_out](https://github.com/user-attachments/assets/82395c07-01ac-49c7-b7fd-922206558580)
+![메인화면-웨이브_out](https://github.com/user-attachments/assets/bf3d121e-7ce2-4cb8-9fd2-ab72ede36c2e)
+
 
 첫 접속화면입니다. CSS animation을 이용해 물결치는 효과를 주었고, 제목으로 영화 검색/타이틀 로고를 눌러 메인화면으로 이동이 가능합니다.
 
-<img src="https://github.com/user-attachments/assets/929a9601-e0ec-4192-b3dc-3d220bb654d1" width="300px" height="" />
+![영화 정보](https://github.com/user-attachments/assets/20783dd7-72c4-47ab-93ac-c1a99838401f)
 
 영화마다 overview의 길이가 다른 것을 대비해 flex-shrink를 활용해 차지할 비율을 맞춰주었고 overview가 그 이상을 넘어가는 경우 숨겨주었습니다. (overflow: hidden)
 
-![24년 개봉작 필터링, 기본이미지](https://github.com/user-attachments/assets/183e902f-71ea-4099-9628-9afdf4917eb4)
+![필터링, 검색결과 없음](https://github.com/user-attachments/assets/43a6b505-5e97-4283-afed-681f2b0d9c9f)
+
+![필터링, 기본이미지](https://github.com/user-attachments/assets/453c7743-6b32-4524-82d2-9e675e25f5a4)
+
 
 검색 결과에서 체크박스를 눌러 2024년 개봉작만 필터링이 가능합니다. HTML 요소를 지우고 다시 추가하는 대신 2024년 개봉 영화의 카드에 클래스를 toggle하여 display:none이 적용되도록 했습니다.
 
@@ -34,7 +38,7 @@ API에서 영화 포스터 이미지를 제공하지 않는 경우 기본 검정
 <br>
 
 # 선택 구현 사항
-- flex 사용
+- flex, grid 사용
 - 검색창에서 enter키 입력해도 검색버튼 클릭한 것과 동일한 검색 실행
 - 검색 결과에서 24년 개봉작만 필터링
 
@@ -53,11 +57,15 @@ API에서 영화 포스터 이미지를 제공하지 않는 경우 기본 검정
 ✔︎ API에서 제공하는 포스터 이미지가 없는 경우
 - 포스터 이미지가 없는 경우 출력할 기본 이미지를 설정
 
+✔︎ chrome과 safari 폰트사이즈, 물결 위치가 다름
+- reset.css 사용하여 동일한 css가 적용될 수 있도록 함
+
 <br>
 <br>
 
 # 해결하지 못한 부분
-- chrome과 safari에서 폰트 사이즈, 물결 위치, z-index가 다른 것을 발견
+- ~~chrome과 safari에서 폰트 사이즈, 물결 위치~~ (24.07.29) 
+- safari에서 z-index가 적용되지 않음
 
 <br>
 <br>
