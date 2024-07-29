@@ -22,7 +22,6 @@
 
 .movieCard {
   width: 15%;
-  aspect-ratio: 2 / 3;
   font-size: 2rem;
 
   position: relative;
