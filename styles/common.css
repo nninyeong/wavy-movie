@@ -28,18 +28,6 @@ body {
   gap: 50px;
 }
 
-.logo {
-  font-size: 6.5rem;
-  margin-top: 50px;
-  font-family: 'LOTTERIACHAB';
-  font-weight: 400;
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 999;
-}
-
 .searchText {
   width: 1000px;
   height: 60px;
@@ -100,11 +88,22 @@ body {
 /* wave */
 .wave {
   overflow: hidden;
-  transform: translate3d(0, 0, 0);
   position: relative;
   width: 100vw;
   height: 400px;
   background-color: white;
+}
+
+.logo {
+  font-size: 6.5rem;
+  margin-top: 50px;
+  font-family: 'LOTTERIACHAB';
+  font-weight: 400;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0px);
+  z-index: 999;
 }
 
 .wave1 {
