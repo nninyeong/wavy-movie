@@ -60,12 +60,16 @@ API에서 영화 포스터 이미지를 제공하지 않는 경우 기본 검정
 ✔︎ chrome과 safari 폰트사이즈, 물결 위치가 다름
 - reset.css 사용하여 동일한 css가 적용될 수 있도록 함
 
+✔︎ safari에서 z-index가 적용되지 않음
+- position: absolute 요소는 z-index 오류가 있음
+- transform: translate3d()를 활용해 z값을 지정해줌
+
 <br>
 <br>
 
 # 해결하지 못한 부분
 - ~~chrome과 safari에서 폰트 사이즈, 물결 위치~~ (24.07.29) 
-- safari에서 z-index가 적용되지 않음
+- ~~safari에서 z-index가 적용되지 않음~~ (24.07.30)
 
 <br>
 <br>
